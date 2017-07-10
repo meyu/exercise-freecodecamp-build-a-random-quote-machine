@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>exercise@freeCodeCamp: Build a Random Quote Machine</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/earlyaccess/cwtexming.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/css-loader/2.2.0/css-loader.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<!-- 文句卡片區 -->
+<div class="h-100 d-flex justify-content-center">
+  <div class="card text-center align-self-center">
+    
+    <!-- 分享區 -->
+    <div class="col" style="top:-35px;">
+      <div id="shareButtons" class="btn-group"></div>
+    </div>
+    
+    <!-- 內容區 -->
+    <div class="card-block">
+      <h2 id="content" class="text-left"></h2><!-- 文句 -->
+      <footer id="writer" class="text-muted"><!-- 作者／來源 -->
+        <cite id="book"></cite></footer><!-- 作品名 -->
+    </div>
+    
+    <!-- 換句鈕 -->
+    <div class="col" style="top:13px;">
+      <button type="button" id="getNewContent" class="btn btn-sm btn-outline-secondary" onclick="doContentLoad()">
+        <i id="fa-spin" class="fa fa-repeat"></i>
+      </button>
+    </div>
+  </div><!-- card -->
+</div><!-- d-flex --><!-- container -->
+
+
+
+<!-- 置底區 -->
+<div class="fixed-bottom">
+  <div class="float-right">
+    <button type="button" class="btn btn-sm btn-outline-secondary fa fa-github-alt" data-toggle="modal" data-target="#readme">
+    </button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="readme" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="https://www.freecodecamp.com/meyu" target="_blank">
+          meyu@<i class="fa fa-free-code-camp" aria-hidden="true"></i>
+        </a>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <script src="https://gist.github.com/meyu/35323826b29bba5400a544c6dda7967e.js"></script>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- fullsreen loader -->
+<div id="loader" class="loader loader-default"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+  font-family: 'Love Ya Like A Sister', cursive, 'cwTeXMing', serif;
+}
+/* 為了讓物件能於畫面居中舖路 */
+html, body {
+	height: 100%;
+}
+/* 讓字卡微透明 */
+.card, .card-block{
+  opacity: 0.8;
+}
+/* 讓分享鈕等寬 */
+.share-button {
+  width: 50px;
+}
+/* 覆寫 font awsome 的 fa-spin 的轉速，讓它能轉快一些 */
+.fa-spin-faster {
+  -webkit-animation: fa-spin 1s infinite linear;
+  animation: fa-spin 1s infinite linear;
+}
